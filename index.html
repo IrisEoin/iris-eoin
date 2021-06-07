@@ -1,0 +1,24 @@
+---
+layout: default
+title: Baile
+---
+
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+        {% include postbox.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Pagination
+================================================== -->
