@@ -1,10 +1,43 @@
 ---
-layout: default
+layout: 404
 title: 404
 permalink: /404.html
 ---
-
-<div class="text-center">
-<h1 class="display-1 mt-5 mb-4"><span class="badge badge-danger">404</span> Ní féidir linn teacht ar do leathanach</h1>
-<p><a href="{{site.baseurl}}/">Baile</a></p>
+<video autoplay muted loop playsinline id="myVideo">
+  <source src="fis.mp4" type="video/mp4">
+</video>
+<div class="section-title">
+<h1><span class="badge badge-danger">404</span> Faraor géar, níor aimsíodh do leathanach</h1>
+<p class="error"><a href="{{site.baseurl}}/">Baile</a></p>
 </div>
+
+
+<style>
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  
+}
+
+/* Add some content at the bottom of the video/page */
+.section-title {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  padding: 20px;
+
+}
+
+.error {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
